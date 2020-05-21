@@ -7,12 +7,11 @@ def find_min_in_nested_arrays(src)
     while element_index < src[row_index].count do 
       if src[row_index][element_index] < lowest_value
         lowest_value = src[row_index][element_index]
-   end 
+      end 
    element_index += 1 
-  end 
+    end 
   outer_results << lowest_value
   row_index += 1 
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
-end
 end
